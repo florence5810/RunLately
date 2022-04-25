@@ -1,0 +1,564 @@
+@charset "UTF-8";
+html {
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 100%;
+    color:  #005897;
+    background-color: #e1ecf0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+   
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+}
+/* link styles */
+a:link {
+    color: #005897;
+}
+a:visited {
+    color: #3a6400;
+}
+a:active {
+    color: #003a64
+}  
+
+ /* fictional site*/
+   .hero_header {
+    text-align: center;
+    position: absolute; 
+    color: black;
+    padding: 1em;
+    bottom: 1%;}
+
+/* top image styles*/
+
+.hero_image {
+    background-image: url(images/runners.jpg);
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.index_pix {
+    background-image: url(images/feet_landing1.jpg);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.aboutme_pix{
+    background-image: url(images/startline.jpg);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+.train_pix{
+    background-image: url(images/sneakers.jpg);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+
+.gear_pix{
+    background-image: url(images/ghost14.jpg);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+.higdon_pix {
+    background-image: url(images/medals.JPG);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+
+/* nav styles */
+.main_nav {
+    display: flex;
+    background-color: #005897;
+    justify-content: space-between;
+    padding: .5em;
+    border-radius: 50px;
+    margin:0 auto;
+    
+}
+
+.main_nav li a {
+    color: #ffffff;
+    padding: 25px 10px;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 10px;
+  
+}
+.main_nav a:hover {
+    background-color: #003a64;
+  
+}
+/* main styles */
+main {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        background-color: #ffffff;
+        line-height: 1.8em;
+        color: #005897;
+        padding: 1.5em 1.5em 1.5em 1.5em;
+        border: double 4px #3a6400;
+        border-radius: 25px;
+        margin: 1.5%;
+        font-size: 15px;
+}
+h1 {
+    text-align: center;
+    font-size: 1.2em
+}
+h2 {
+    padding-top: 1em;
+    padding-left: 1em;
+    font-size: 1em;
+  }
+  
+/* receipe page style*/
+  .containerrec{
+    
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "heads"
+    "main1"  
+    "main2"
+    "main3"
+    "aside"
+    "foot"
+    }
+
+.heads {
+    grid-area: heads;
+    font-size: 15px;
+    text-align: center;
+        }
+        
+ .main1 {
+    grid-area: main1;
+    font-size: 15px;
+    text-align: center;
+        }
+        
+.main2 {
+    grid-area: main2;
+    font-size: 15px;
+    text-align: center;
+        }
+        
+.main3 {
+    grid-area: main3;
+    font-size: 15px;
+    text-align: center;      
+    
+        }
+.aside {
+
+    grid-area: aside;
+    font-size: 15px;
+    text-align: center;      
+    
+        }
+       
+.foot {
+    grid-area: foot;
+    font-size: 12px;
+    text-align: center; 
+    padding-top: 5%;
+    
+        }
+      
+/* table style*/    
+td, th {
+    border: .5px solid #005897;
+    padding-left: .02px;
+    padding-right: .01px;
+    border-radius: 1.5px;
+    text-align: center;
+    font-size: 14px;
+  }
+table th {
+    background-color: #005897;
+    color: #e1ecf0;
+    margin: 1px;
+    align-items: center;
+    text-decoration: 1px dashed; 
+    color: #ffffff;
+    }
+
+table tr {
+        background-color: #e1ecf0;
+        color: #005897;
+   }
+
+
+ol { list-style: none;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    font-size: 15px;
+    line-height: 1.8em;
+
+}
+aside {
+    grid-area: aside;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #ffffff;
+    line-height: 1.8em;
+    color: #005897;
+    padding: 2em;
+    border: double 4px #3a6400;
+    border-radius: 25px;
+    margin: 1.5%;
+   }
+/* footer styles*/
+footer {
+    grid-area: footer;
+    background-color: #005897;
+    color: #ffffff;
+    border-radius: 50px;
+   font-size: 12px;
+   margin: 1.5%;
+   clear: both;
+  }
+  
+address {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  }
+/*gear page styles*/
+.containergr {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "main"
+    "aside"
+
+}
+
+.main_table {
+    grid-area: main;
+}
+.aside_table {
+    grid-area: aside;
+}
+
+/*misc style*/
+.containercl {
+    text-align: center;
+    font-size: 20px
+} 
+.photo {
+    width: 250px;
+    padding-left: 35px;
+
+    padding-bottom: 5px;
+}
+@media screen and (min-width:400px) {
+    .main_nav li a{
+        font-size: 14px;
+    }
+    .photo {
+        float:left;
+        padding-right: 1.5em;
+        width: 275px;
+    }
+    td, th {
+        font-size: 15px;
+    }
+
+}
+    @media screen and (min-width:500px) {
+    .containercl {
+        text-align: center;
+        font-size: 30px
+    
+    } 
+    .photo {
+    
+        padding-right: 1.75em;
+        padding-top: 20px;
+        width: 300px;
+    }
+   
+    }
+@media screen and (min-width:600px) {
+ 
+    /*nav style*/
+    .main_nav li a {
+        color: #ffffff;
+        border-radius: 2em;
+        border: 1px solid;
+        padding: .5em 1em;
+        margin: 0 auto;
+       text-decoration: none;
+       font-size: 20px;
+    }
+    .main_nav {
+        display: flex;
+        background-color: #005897;
+        justify-content: space-between;
+        padding: 1em;
+        border-radius: 50px;
+        margin:0 auto;
+    }
+    /* main styles*/
+    h1 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2em;
+    }
+    h2 {
+        padding-top: 1em;
+        padding-left: 1em;
+        font-size: 1.5em;
+    }
+    /* gear style*/
+    .containergr {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-gap: 5px;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+        "main aside";
+    
+    }
+    .main_table {
+        grid-area: main;
+    }
+    .aside_table {
+        grid-area: aside;
+    }
+    td, th {
+        border: .5px solid #005897;
+        padding: .5px;
+        border-radius: 1.5px;
+        text-align: center;
+        
+      }
+    table th {
+        background-color: #005897;
+        color: #e1ecf0;
+        margin: 1px;
+        padding: 1em;
+        align-items: center;
+        text-decoration: 1px solid; 
+        color: #ffffff;
+        } 
+    table tr {
+        background-color: #e1ecf0;
+        color: #005897;
+
+    }
+    /* recipe style*/
+     .containerrec {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+            "heads heads"
+            "main1 main2" 
+            "main3 aside"
+            "foot foot"
+            } 
+        /*misc style*/    
+            .containercl {
+                text-align: center;
+                font-size: 40px
+            } 
+            .photo {
+            float:left;
+               padding-right: 1.75em;
+               padding-top: 2em;
+                width: 325px;
+            }  
+            ol { list-style: none;
+                padding: 1.5em 1.5em 1.5em 1.5em;
+                font-size: 15px;
+                line-height: 1.8em;
+            
+            }
+            footer {
+                font-size: 15px;
+            }
+}
+        @media screen and (min-width:850px) {    
+            /* main image style*/
+            .hero_image {
+                background-image: url(images/runners.jpg);
+                height: 450px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                max-width: 1200px;
+                margin:0 auto;
+            }
+            .index_pix {
+                background-image: url(images/feet_landing1.jpg);
+                height: 400px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .aboutme_pix{
+                background-image: url(images/startline.jpg);
+                height: 400px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative; 
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .train_pix{
+                background-image: url(images/sneakers.jpg);
+                height: 400px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative; 
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .gear_pix{
+                background-image: url(images/ghost14.jpg);
+                height: 400px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative; 
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .higdon_pix {
+                background-image: url(images/medals.JPG);
+                height: 400px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative; 
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            /* nav style*/
+               
+/* recipes style*/
+        .containerrec{
+    
+            display: grid;
+            grid-template-rows: [header-start] auto [content-start] 2fr [footer-start] ; /*100px 400px 100px;*/
+            grid-template-columns:[main1] 1fr [main2] 1fr [main3] 1fr [aside] 1fr; /*300px 300px 300px;*/
+            grid-gap: 10px;
+            max-width: 1200px;
+            grid-template-areas: 
+            "heads heads heads heads"
+            "main1 main2 main3 aside"
+            "foot foot foot foot";
+            }
+        
+        .heads {
+            grid-area: heads;
+            font-size: 20px;
+            text-align: center;
+                }
+                
+         .main1 {
+            grid-area: main1;
+            font-size: 20px;
+            text-align: center;
+                }
+                
+        .main2 {
+            grid-area: main2;
+            font-size: 20px;
+            text-align: center;
+                }
+                
+        .main3 {
+            grid-area: main3;
+            font-size: 20px;
+            text-align: center;      
+            
+                }
+        .aside {
+        
+            grid-area: aside;
+            font-size: 20px;
+            text-align: center;      
+            
+                }
+               
+        .foot {
+            grid-area: foot;
+            font-size: 18px;
+            text-align: center; 
+            padding-top: 5%;
+            
+                }
+            /* gear style*/
+                .containergr {
+                    display: grid;
+                    grid-template-rows: 1fr;
+                    grid-gap: 10px;
+                    grid-template-columns: auto auto;
+                    max-width: 1200px;
+                    grid-template-areas:
+                    "main aside";
+                
+                }
+                .main_table {
+                    grid-area: main;
+                    
+                }
+                .aside_table {
+                    grid-area: aside;
+                    font-size: 20px;
+            }
+
+            main{
+                font-size: 20px;
+            }
+      td, th {
+          font-size: 20px;
+      }
+      /*misc style*/
+      .photo {
+        float:left;
+           padding-right: 1.75em;
+           padding-top: 2em;
+            width: 350px;
+        }  
+        ol { list-style: none;
+            padding: 1.5em 1.5em 1.5em 1.5em;
+            font-size: 20px;
+            line-height: 1.8em;
+        }
+    }

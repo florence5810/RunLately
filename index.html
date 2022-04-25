@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>run</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ 
+@import url("run.css");
+
+
+</style>
+
+</head>
+
+<body>
+     <header>
+       
+      
+     
+        <nav>
+         <ul class="main_nav"> 
+<li><a href="index.html">Home</a></li>
+<li><a href="train/training.html">Training</a></li>
+<li><a href="about_me.html">About Me</a></li>
+<li><a href="gear.html">Gear</a></li>
+<li> <a href="recipes.html">Recipes</a></li>
+</ul>  
+</nav>
+<div class="index_pix">
+    <h1 class="hero_header">*This is a fictional site for teaching purposes only.</h1>
+</div>
+
+<h1>Welcome To Run Lately!</h1>
+</header>
+<main>
+        <img src="images/catherine.jpg" alt="authors face" class="photo">
+        <p>I'm so glad you stopped by, I am Catherine, a mother of three, a wife and a chocolate loving, running enthusiast. I used to think running just meant putting on a pair on sneakers and moving your legs faster than walking. I soon learned that the gear you wear is not just for show. Who cares if your shoes are cute, if they don't support your feet&hellip; they have got to go. I now have some <a href="gear.html">favorite items</a> that are key to a successful run. This website shows my acheivments, favorite training plans, and gear. Enjoy! </p>
+     <h2>Currently Training For:</h2>
+
+        <p><a href="https://www.edinburghmarathon.com/" target="blank">Edinburgh Marathon Festival Starting In:</a> </p>
+       
+    <div class="containercl"><p id="count_down"></p>
+    </div>
+
+       
+            
+
+    </main>
+    <footer>
+        <address>
+        
+    <p>Run Lately<br>23 Main Street<br> Lakeland, FL 33801</p>
+    <p>863-555-3454<br>Runlately@mail.com</p>
+        
+      </address>
+      </footer> 
+      <script>
+          var countDownDate = new Date("May 29, 2022 10:00:00").getTime();
+
+          var x = setInterval (function() {
+          
+          var now = new Date().getTime();
+
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("count_down").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("count_down").innerHTML = "This run is finished";
+  }
+}, 1000);
+ </script>
+   </body>
+    
+</html>
